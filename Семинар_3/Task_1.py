@@ -6,10 +6,10 @@ my_list = []
 for i in range(length):
     my_list.append(randint(1, 100))
 print(my_list)
-found = my_list[i]
+found = my_list[0]
 if my_list.count(number) == 0:
     for i in range(length):
-        if abs(my_list[i] - number) < abs(my_list[0] - number):
+        if abs(my_list[i] - number) < abs(found - number):
             found = my_list[i]
     print(f'такого числа в списке нет, максимально близкое число к вашему - {found}')
 else:
